@@ -1,0 +1,327 @@
+body{
+  margin: auto;
+  border: solid #f7f4f4;
+  background-color: #f7f4f4;
+  font-family: Verdana, sans-serif;
+  width: 80vw;
+  height: fit-content;
+}
+header{
+  height: 10vh;
+  width: 78vw;
+  position: fixed;
+  display: flex;
+  border-radius: 4px;
+ background-color: #ffffff;
+}
+.shadowhead{
+  box-shadow:3px 3px 4px 4px rgb(121, 150, 121);
+}
+.shadowhead:hover{
+  box-shadow: 3px 3px 4px 4px rgb(75, 91, 145);
+}
+.shadowhead a:hover{
+ box-shadow: 1px 1px 2px 2px white;
+ border-radius: 3px;
+}
+nav {
+  border: none;
+  margin: auto;
+  display: flexbox;
+}
+header nav a{
+  margin : 1vh 2vw 1vh 1vw;
+  font-size: 3vh;
+  text-decoration: none;
+  color:rgb(84, 196, 84);
+}
+header nav :hover{
+  color: #FF4C29;
+}
+header div{
+  margin: auto;
+  display: flexbox;
+  font-size: 2.3vh;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(76, 189, 76);
+}
+header div :hover{
+font-size: 2.2vh;
+box-shadow: rgb(76, 189, 76);
+font-weight: bold;
+}
+#logoimg{
+  margin: 2vh 5vw 2vh 1vw;
+  height: 5vh;
+  width: 11vw;
+}
+
+aside{
+  margin: 12vh 0vw 4vh 0.3vw;
+  float: left;
+  width: 26.5vw;
+  height: fit-content;  
+}
+aside div{
+  border-radius: 0.2px solid white;
+  height: 35vh;
+  margin: 1vh 1vw 2vh 0vw;
+  border-radius: 4px;
+  display: flexbox;
+}
+aside div img{
+  height: 34.8vh;
+  width: 25.4vw;
+  border: .2px solid white;
+  border-radius: 4px;
+}
+main{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 13vh 2vw 1vh 1vw;
+  float: right;
+  width: 50vw;
+  height: fit-content;
+  color: rgb(49, 155, 49);
+  font-size: 3vh;
+}
+main h1{
+  color: rgb(255, 93, 34);
+  margin: 3vh 0vw 0vh 0vw;
+  text-align: center;
+}
+main p{ 
+  font-size: 2.5vh;
+  font-size: 2.5vh;
+  margin: 3vh 1vw 0vh 6vw;
+  height: fit-content;
+  width: fit-content;
+}
+main form{
+  margin :3vh 3vw 3vh 3vw;
+}
+input[type=text], input[type=password],input[type=submit]{
+  width: 40vw;
+  height: 6.5vh;
+  margin: 1.5vh 1vw 0vh 1vw;
+  display: inline-block;
+  border: .3px solid #ccc;
+  box-sizing: border-box;
+  font-size: 3vh;
+}
+input[type=submit]{
+  background-color: rgb(110, 211, 110);
+  color: white;
+}
+input[type=submit]:hover{
+  box-shadow:3px 3px 4px 4px rgb(121, 150, 121);
+  font-weight: bold;
+  background-color: #f1674c;
+}
+main article{
+  margin: 1.5vh 3vw 1.5vh 1vw;
+}
+main section{
+  margin: 1.5vh 3vw 1.5vh 1vw;
+}
+main div{
+  width: 40vw;
+  height: fit-content;
+  font-size: 3.5vh;
+  margin: 3vh 5vw 3vh 5vw;
+  text-align: center;
+}
+
+main a{
+  margin: 1vh 1vw 1vh 1vw;
+  color: #dd745e;
+}
+.shadowmain{  
+  box-shadow: 3px 3px 4px 4px rgb(178, 184, 204);
+  }
+  .shadowmain:hover{
+    box-shadow: 3px 3px 4px 4px rgb(75, 91, 145);
+  }
+  .shadowmain a:hover{
+   box-shadow: 1.5px 1.5px 2.5px 2.5px rgb(90, 189, 90);
+  }
+footer {
+  display: flex;
+  flex-direction: column;
+  clear: both;
+  width: 78vw;
+  border-radius: 4px;
+  margin: auto;
+  height: fit-content;
+  background-color: white;
+	color: #FF4C29;
+	text-align: center;
+  box-shadow: 3px 3px 4px 4px rgb(178, 184, 204);
+}
+footer:hover{
+  box-shadow: 3px 3px 4px 4px rgb(75, 91, 145);
+}
+footer div a:hover{
+  color: #FF4C29;
+  font-weight: bold;
+  box-shadow:2px 2px 3px 3px rgb(75, 91, 145);
+  border-radius: 3px;
+}
+footer div{
+  display: inline;
+  margin:1vh 0vw 1vh 0vw ;
+}
+footer div a{
+  margin: 0vh 3vw 0vh 3vw;
+  text-decoration: none;
+  color: black;
+}
+
+.socialicon:hover{
+  height:4.4vh;
+  width: 1.8vw;
+  animation-name: socialicon;
+  animation-duration: .5s;
+  animation-iteration-count: 3;
+}
+@keyframes socialicon{
+  from 
+  {transform: rotate(0deg);}
+  to 
+  {transform: rotate(15deg);}
+}
+.socialicon{
+padding: 1.5vh 2vw 1.5vh 2vw;
+}
+@media only screen and (max-width: 1134px) and (min-width: 300px)  {
+  body{
+    width: 95vw;
+  }
+  header{
+    height: 6vh;
+    width: 95vw;
+    display: flex;
+  }
+  .shadowhead{
+    box-shadow:2px 2px 3px 3px rgb(121, 150, 121);
+  }
+  .shadowhead:hover{
+    box-shadow: 2px 2px 3x 3px rgb(75, 91, 145);
+  }
+  .shadowhead a:hover{
+   box-shadow: .5px .5px 1px 1px white;
+  }
+  header nav a{
+    margin: .5vh .5vw .5vh .5vw;
+    font-size: 1.3vh;
+  }
+  #logoimg {
+    margin: 1vh 1vw 1vh 1vw;
+    height: 4vh;
+  }
+  header div {
+    font-size:1.4vh;
+    padding: .5vh .5vw .5vh .5vw;
+  }
+  
+  aside{
+    margin:7vh 0vw 1vh 0vw;
+    float: left;
+    width: 36vw;
+  }
+  aside div{
+    height: 18vh;
+    margin: 6vh 0vw 1vh 0vw;
+  }
+  aside div img{
+    height: 16.9vh;
+    width: 35.6vw;
+  }
+
+  main{
+    margin: 8vh 1vw 5vh 1vw;;
+    float: right;
+    width: 56vw;
+    font-size: 2vh;
+    display: flexbox;
+  }
+  main h1{
+    color: rgb(255, 93, 34);
+    margin: 2vh 0vw 0vh 0vw;
+    font-size: 2.5vh;
+  }
+  main p{ 
+    font-size: 2vh;
+    margin: 1vh 1vw 0vh 1vw;
+    
+  }
+  main form{
+    margin: 1.5vh 1.5vw 1.5vh 1.5vw;
+  }
+  input[type=text], input[type=password],input[type=submit]{
+    width: 51vw;
+    height: 4vh;
+    margin: 1.2vh 1vw 0vh 1vw;
+    font-size: 2vh;
+    display: flexbox;
+  }
+  
+  input[type=submit]:hover{
+    box-shadow:3px 3px 4px 4px rgb(121, 150, 121);
+    font-weight: bold;
+  }
+  main article{
+    margin: 1.2vh 3vw 1.2vh 1vw;
+  }
+  main section{
+    margin: 1.5vh 3vw 1.5vh 1vw;
+  }
+  main div{
+    width: 40vw;
+    font-size: 2vh;
+    margin: 2vh 7.5vw 2vh 7.5vw;
+  }
+  main a{
+    margin: 1vh 1vw 1vh 1vw;
+    border: .5px solid green;
+    color: #dd745e;
+  }
+  .shadowmain{
+    box-shadow: 3px 3px 4px 4px rgb(178, 184, 204);
+    }
+    .shadowmain:hover{
+      box-shadow: 3px 3px 4px 4px rgb(75, 91, 145);
+    }
+    .shadowmain a:hover{
+     box-shadow: 1.5px 1.5px 2.5px 2.5px rgb(90, 189, 90);
+    }
+
+  footer {
+    width: 95vw;
+  }
+  footer div{
+    margin:0vh 0vw 1vh 0vw ;
+  }
+  footer div a{
+    margin: 0vh 3vw 0vh 3vw;
+    font-size: 2.1vh;
+  }
+  footer div a:hover{
+  
+    box-shadow:2px 2px 3px 3px rgb(75, 91, 145);
+    border-radius: 3px;
+  }
+  .socialicon:hover{
+    width: 4.1vw;
+    height: 3.6vh;
+  }
+  .socialicon{
+    width: 4vw;
+  padding: 1.5vh 2vw 1.5vh 2vw;
+  }
+  footer:hover{
+    box-shadow: 1px 1px 2px 2px rgb(75, 91, 145);
+  }
+}
